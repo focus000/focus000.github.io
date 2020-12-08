@@ -3,8 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>focus000.github.io/levelup/</loc>
-    <priority>0</priority>
+    <loc>focus000.github.io/posts/levelup/</loc>
   </url>
   
   <url>
@@ -13,6 +12,10 @@
   
   <url>
     <loc>focus000.github.io/</loc>
+  </url>
+  
+  <url>
+    <loc>focus000.github.io/posts/</loc>
   </url>
   
   <url>
