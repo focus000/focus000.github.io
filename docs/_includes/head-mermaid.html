@@ -1,0 +1,21 @@
+{% if page.mermaid %}
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js">
+</script>
+<script>
+$(document).ready(function() {
+    var renderer = new marked.Renderer();
+    renderer.code = function (code, language) {
+        if(code.match(/^sequenceDiagram/)||code.match(/^graph/)){
+            return '<div class="mermaid">'+code+'</div>';
+        }
+        else{
+            return '<pre><code>'+code+'</code></pre>';
+        }
+    };
+    mermaid.initialize({
+        theme: 'forest'
+    });
+});
+</script>
+{% endif %}
